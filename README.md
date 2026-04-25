@@ -11,7 +11,3 @@ Abre `index.html` en el navegador. El prototipo no requiere instalación ni serv
 - `index.html`: estructura de las pantallas.
 - `styles.css`: diseño visual y responsive.
 - `app.js`: navegación e interacciones del prototipo.
-
-## Publicación sugerida
-
-Este proyecto puede publicarse como sitio estático en GitHub Pages, Netlify o Vercel.
