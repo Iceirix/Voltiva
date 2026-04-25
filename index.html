@@ -1,0 +1,1801 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Voltiva · Prototipo 30 pantallas</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="prototype-shell" data-view-mode="grid">
+      <header class="workbench-header">
+        <div>
+          <p class="eyebrow">Prototipo completo · 30 pantallas · Monitor de consumo doméstico</p>
+          <h1>Voltiva</h1>
+        </div>
+        <div class="workbench-actions" aria-label="Controles de visualización del prototipo">
+          <div class="view-switch" role="group" aria-label="Modo de vista">
+            <button class="active" type="button" data-view-mode-button="grid">Todas</button>
+            <button type="button" data-view-mode-button="single">Una pantalla</button>
+          </div>
+          <div class="screen-stepper" aria-label="Navegar pantallas">
+            <button type="button" data-screen-prev aria-label="Pantalla anterior">‹</button>
+            <span data-screen-counter>01 / 30</span>
+            <button type="button" data-screen-next aria-label="Pantalla siguiente">›</button>
+          </div>
+          <div class="status-pill">
+            <span></span>
+            Neo Utility Energía
+          </div>
+        </div>
+      </header>
+
+      <section class="screen-grid" aria-label="Pantallas del prototipo">
+        <article class="phone" data-screen="01">
+          <div class="device-top"></div>
+          <section class="screen splash-screen">
+            <div class="energy-orbit">
+              <div class="logo-mark">
+                <svg viewBox="0 0 48 48" aria-hidden="true">
+                  <path d="M27.8 4 11 28.4h12.4L20.2 44 37 19.6H24.6L27.8 4Z" />
+                </svg>
+              </div>
+            </div>
+            <div class="splash-copy">
+              <p class="screen-number">01</p>
+              <h2>Voltiva</h2>
+              <p>Monitorea tu hogar, entiende tu consumo y paga menos energía.</p>
+            </div>
+            <div class="hero-meter">
+              <div>
+                <span>Este mes</span>
+                <strong>214 kWh</strong>
+              </div>
+              <div>
+                <span>Costo estimado</span>
+                <strong>$642 MXN</strong>
+              </div>
+            </div>
+            <div class="action-stack">
+              <button class="primary-action" data-go="02">Comenzar</button>
+              <button class="ghost-action" data-go="05">Ya tengo cuenta</button>
+            </div>
+          </section>
+        </article>
+
+        <article class="phone" data-screen="02">
+          <div class="device-top"></div>
+          <section class="screen onboarding-screen">
+            <nav class="onboarding-nav">
+              <span>01 / 03</span>
+              <button data-go="05">Saltar</button>
+            </nav>
+            <div class="house-map">
+              <div class="room kitchen">
+                <span>Cocina</span>
+                <strong>1.8 kW</strong>
+              </div>
+              <div class="room living">
+                <span>Sala</span>
+                <strong>0.9 kW</strong>
+              </div>
+              <div class="room bedroom">
+                <span>Recámara</span>
+                <strong>0.6 kW</strong>
+              </div>
+              <div class="room ac">
+                <span>AC</span>
+                <strong>2.4 kW</strong>
+              </div>
+            </div>
+            <div class="onboarding-copy">
+              <p class="screen-number">02</p>
+              <h2>Conecta los dispositivos de tu hogar</h2>
+              <p>Organiza tus aparatos por habitación y categoría para detectar dónde se va la energía.</p>
+            </div>
+            <div class="progress-dots">
+              <span class="active"></span>
+              <span></span>
+              <span></span>
+            </div>
+            <button class="primary-action" data-go="03">Siguiente</button>
+          </section>
+        </article>
+
+        <article class="phone" data-screen="03">
+          <div class="device-top"></div>
+          <section class="screen onboarding-screen live-screen">
+            <nav class="onboarding-nav">
+              <span>02 / 03</span>
+              <button data-go="05">Saltar</button>
+            </nav>
+            <div class="live-card">
+              <div class="live-header">
+                <div>
+                  <span>Consumo actual</span>
+                  <strong>3.7 kW</strong>
+                </div>
+                <span class="live-dot"></span>
+              </div>
+              <div class="wave-chart">
+                <span style="height: 34%"></span>
+                <span style="height: 48%"></span>
+                <span style="height: 42%"></span>
+                <span style="height: 72%"></span>
+                <span style="height: 64%"></span>
+                <span style="height: 88%"></span>
+                <span style="height: 58%"></span>
+                <span style="height: 44%"></span>
+              </div>
+            </div>
+            <div class="mini-feed">
+              <div>
+                <span>Aire acondicionado</span>
+                <strong>$18.40 hoy</strong>
+              </div>
+              <div>
+                <span>Lavadora</span>
+                <strong>$6.10 hoy</strong>
+              </div>
+            </div>
+            <div class="onboarding-copy">
+              <p class="screen-number">03</p>
+              <h2>Visualiza el consumo en tiempo real</h2>
+              <p>Consulta picos, horarios críticos y costos estimados antes de que llegue el recibo.</p>
+            </div>
+            <div class="progress-dots">
+              <span></span>
+              <span class="active"></span>
+              <span></span>
+            </div>
+            <button class="primary-action" data-go="04">Siguiente</button>
+          </section>
+        </article>
+
+        <article class="phone" data-screen="04">
+          <div class="device-top"></div>
+          <section class="screen onboarding-screen savings-screen">
+            <nav class="onboarding-nav">
+              <span>03 / 03</span>
+              <button data-go="05">Saltar</button>
+            </nav>
+            <div class="savings-panel">
+              <div class="savings-total">
+                <span>Ahorro potencial</span>
+                <strong>$286</strong>
+                <small>MXN este mes</small>
+              </div>
+              <div class="saving-row">
+                <span>AC nocturno</span>
+                <strong>$128</strong>
+              </div>
+              <div class="saving-row">
+                <span>Refrigerador</span>
+                <strong>$74</strong>
+              </div>
+              <div class="saving-row">
+                <span>Stand-by</span>
+                <strong>$39</strong>
+              </div>
+            </div>
+            <div class="onboarding-copy">
+              <p class="screen-number">04</p>
+              <h2>Descubre cuánto puedes ahorrar</h2>
+              <p>Recibe acciones concretas por impacto, costo y facilidad para reducir tu recibo.</p>
+            </div>
+            <div class="progress-dots">
+              <span></span>
+              <span></span>
+              <span class="active"></span>
+            </div>
+            <button class="primary-action" data-go="05" data-register="true">Crear cuenta</button>
+          </section>
+        </article>
+
+        <article class="phone" data-screen="05">
+          <div class="device-top"></div>
+          <section class="screen auth-screen">
+            <div class="auth-brand">
+              <div class="small-mark">
+                <svg viewBox="0 0 48 48" aria-hidden="true">
+                  <path d="M27.8 4 11 28.4h12.4L20.2 44 37 19.6H24.6L27.8 4Z" />
+                </svg>
+              </div>
+              <div>
+                <p class="screen-number">05</p>
+                <h2>Accede a tu hogar</h2>
+              </div>
+            </div>
+
+            <div class="auth-tabs" role="tablist" aria-label="Autenticación">
+              <button class="active" data-tab="login">Iniciar sesión</button>
+              <button data-tab="register">Registrarme</button>
+            </div>
+
+            <form class="auth-form active" data-panel="login">
+              <label>
+                Correo
+                <input type="email" value="ana@hogar.mx" />
+              </label>
+              <label>
+                Contraseña
+                <input type="password" value="voltiva" />
+              </label>
+              <button class="primary-action" type="button" data-go="06">Entrar</button>
+              <button class="text-link" type="button" data-go="21">Olvidé mi contraseña</button>
+            </form>
+
+            <form class="auth-form" data-panel="register">
+              <label>
+                Nombre
+                <input type="text" value="Ana López" />
+              </label>
+              <label>
+                Correo
+                <input type="email" value="ana@hogar.mx" />
+              </label>
+              <label>
+                Contraseña
+                <input type="password" value="voltiva" />
+              </label>
+              <button class="primary-action" type="button" data-go="06">Crear cuenta</button>
+            </form>
+
+            <div class="social-actions">
+              <button type="button" data-go="06">Google</button>
+              <button type="button" data-go="06">Apple</button>
+            </div>
+          </section>
+        </article>
+
+        <article class="phone" data-screen="06">
+          <div class="device-top"></div>
+          <section class="screen app-screen dashboard-screen">
+            <header class="app-header">
+              <div>
+                <p class="screen-number">06 · Inicio</p>
+                <h2>Hola, Ana</h2>
+              </div>
+              <button class="icon-button" data-go="11" aria-label="Alertas">!</button>
+            </header>
+
+            <section class="energy-summary">
+              <div class="summary-topline">
+                <span>Consumo mensual</span>
+                <strong>214 kWh</strong>
+              </div>
+              <div class="cost-row">
+                <div>
+                  <span>Costo estimado</span>
+                  <strong>$642 MXN</strong>
+                </div>
+                <div>
+                  <span>Ahorro potencial</span>
+                  <strong>$286</strong>
+                </div>
+              </div>
+              <div class="sparkline">
+                <span style="height: 35%"></span>
+                <span style="height: 44%"></span>
+                <span style="height: 38%"></span>
+                <span style="height: 62%"></span>
+                <span style="height: 58%"></span>
+                <span style="height: 76%"></span>
+                <span style="height: 52%"></span>
+              </div>
+            </section>
+
+            <section class="section-heading">
+              <h3>Dispositivos activos</h3>
+              <button data-go="07">Ver todos</button>
+            </section>
+
+            <div class="active-strip">
+              <button class="device-chip hot" data-go="08">
+                <span>AC</span>
+                <strong>2.4 kW</strong>
+                <small>$128 mes</small>
+              </button>
+              <button class="device-chip" data-go="08R">
+                <span>Refri</span>
+                <strong>0.9 kW</strong>
+                <small>$74 mes</small>
+              </button>
+              <button class="device-chip" data-go="08T">
+                <span>TV</span>
+                <strong>0.3 kW</strong>
+                <small>$22 mes</small>
+              </button>
+            </div>
+
+            <button class="alert-card" data-go="11">
+              <span>Pico detectado</span>
+              <strong>El aire acondicionado elevó 18% el consumo entre 21:00 y 23:00.</strong>
+            </button>
+
+            <button class="report-shortcut" data-go="16">
+              <span>Reporte mensual</span>
+              <strong>Ver resumen de abril</strong>
+            </button>
+
+            <nav class="bottom-nav" aria-label="Navegación principal">
+              <button class="active" data-go="06"><span>⌂</span>Inicio</button>
+              <button data-go="07"><span>▦</span>Dispositivos</button>
+              <button data-go="10"><span>▥</span>Estadísticas</button>
+              <button data-go="11"><span>!</span>Alertas</button>
+              <button data-go="14"><span>○</span>Perfil</button>
+            </nav>
+          </section>
+        </article>
+
+        <article class="phone" data-screen="07">
+          <div class="device-top"></div>
+          <section class="screen app-screen devices-screen">
+            <header class="app-header">
+              <div>
+                <p class="screen-number">07 · Dispositivos</p>
+                <h2>Tu hogar</h2>
+              </div>
+              <button class="icon-button add" data-go="09" aria-label="Agregar dispositivo">+</button>
+            </header>
+
+            <label class="search-field">
+              <span>Buscar dispositivo</span>
+              <input type="search" placeholder="Aire, refrigerador, TV" data-device-search />
+            </label>
+
+            <div class="filter-tabs">
+              <button class="active" data-device-filter="all">Todos</button>
+              <button data-device-filter="active">Activos</button>
+              <button data-device-filter="inactive">Inactivos</button>
+            </div>
+
+            <div class="device-list">
+              <button class="device-row" data-go="08" data-device-status="active">
+                <span class="device-icon climate"></span>
+                <span>
+                  <strong>Aire acondicionado</strong>
+                  <small>Recámara · 2.4 kW</small>
+                </span>
+                <em>Activo</em>
+              </button>
+              <button class="device-row" data-go="08R" data-device-status="active">
+                <span class="device-icon kitchen-icon"></span>
+                <span>
+                  <strong>Refrigerador</strong>
+                  <small>Cocina · 0.9 kW</small>
+                </span>
+                <em>Activo</em>
+              </button>
+              <button class="device-row" data-go="08T" data-device-status="active">
+                <span class="device-icon entertainment"></span>
+                <span>
+                  <strong>Televisión</strong>
+                  <small>Sala · 0.3 kW</small>
+                </span>
+                <em>Activo</em>
+              </button>
+              <div class="empty-state" data-empty-devices hidden>
+                <strong>No hay dispositivos inactivos</strong>
+                <span>Cuando pauses el monitoreo de un aparato aparecerá aquí.</span>
+              </div>
+            </div>
+
+            <button class="primary-action add-device-cta" data-go="09">Agregar dispositivo</button>
+
+            <nav class="bottom-nav" aria-label="Navegación principal">
+              <button data-go="06"><span>⌂</span>Inicio</button>
+              <button class="active" data-go="07"><span>▦</span>Dispositivos</button>
+              <button data-go="10"><span>▥</span>Estadísticas</button>
+              <button data-go="11"><span>!</span>Alertas</button>
+              <button data-go="14"><span>○</span>Perfil</button>
+            </nav>
+          </section>
+        </article>
+
+        <article class="phone" data-screen="08">
+          <div class="device-top"></div>
+          <section class="screen app-screen detail-screen">
+            <header class="app-header">
+              <button class="icon-button back" data-go="07" aria-label="Regresar">‹</button>
+              <div>
+                <p class="screen-number">08 · Detalle</p>
+                <h2>Aire acondicionado</h2>
+              </div>
+            </header>
+
+            <section class="detail-hero">
+              <span class="device-icon climate large"></span>
+              <div>
+                <span>Consumo hoy</span>
+                <strong>18.6 kWh</strong>
+                <small>$55.80 MXN estimados</small>
+              </div>
+            </section>
+
+            <div class="metric-grid">
+              <div>
+                <span>Mes</span>
+                <strong>74 kWh</strong>
+              </div>
+              <div>
+                <span>Costo</span>
+                <strong>$222</strong>
+              </div>
+              <div>
+                <span>Pico</span>
+                <strong>22:10</strong>
+              </div>
+            </div>
+
+            <section class="chart-card">
+              <div class="section-heading compact">
+                <h3>Últimos 7 días</h3>
+                <button data-go="18">Historial</button>
+              </div>
+              <div class="bar-chart">
+                <span style="height: 42%"></span>
+                <span style="height: 55%"></span>
+                <span style="height: 36%"></span>
+                <span style="height: 78%"></span>
+                <span style="height: 69%"></span>
+                <span style="height: 88%"></span>
+                <span style="height: 64%"></span>
+              </div>
+            </section>
+
+            <section class="schedule-card">
+              <div>
+                <span>Programación</span>
+                <strong>20:00 - 02:00</strong>
+              </div>
+              <button data-go="19">Editar</button>
+            </section>
+
+            <section class="suggestion-card">
+              <span>Sugerencia</span>
+              <strong>Apágalo 2 horas antes de dormir y conserva ventilación.</strong>
+              <small>Ahorro estimado: $128 MXN/mes</small>
+            </section>
+
+            <nav class="bottom-nav" aria-label="Navegación principal">
+              <button data-go="06"><span>⌂</span>Inicio</button>
+              <button class="active" data-go="07"><span>▦</span>Dispositivos</button>
+              <button data-go="10"><span>▥</span>Estadísticas</button>
+              <button data-go="11"><span>!</span>Alertas</button>
+              <button data-go="14"><span>○</span>Perfil</button>
+            </nav>
+          </section>
+        </article>
+
+        <article class="phone" data-screen="08R">
+          <div class="device-top"></div>
+          <section class="screen app-screen detail-screen">
+            <header class="app-header">
+              <button class="icon-button back" data-go="07" aria-label="Regresar">‹</button>
+              <div>
+                <p class="screen-number">08 · Detalle</p>
+                <h2>Refrigerador</h2>
+              </div>
+            </header>
+
+            <section class="detail-hero">
+              <span class="device-icon kitchen-icon large"></span>
+              <div>
+                <span>Consumo hoy</span>
+                <strong>6.2 kWh</strong>
+                <small>$18.60 MXN estimados</small>
+              </div>
+            </section>
+
+            <div class="metric-grid">
+              <div>
+                <span>Mes</span>
+                <strong>24.6 kWh</strong>
+              </div>
+              <div>
+                <span>Costo</span>
+                <strong>$74</strong>
+              </div>
+              <div>
+                <span>Pico</span>
+                <strong>14:30</strong>
+              </div>
+            </div>
+
+            <section class="chart-card">
+              <div class="section-heading compact">
+                <h3>Últimos 7 días</h3>
+                <button data-go="08R">Historial</button>
+              </div>
+              <div class="bar-chart calm">
+                <span style="height: 52%"></span>
+                <span style="height: 49%"></span>
+                <span style="height: 57%"></span>
+                <span style="height: 46%"></span>
+                <span style="height: 54%"></span>
+                <span style="height: 61%"></span>
+                <span style="height: 50%"></span>
+              </div>
+            </section>
+
+            <section class="schedule-card">
+              <div>
+                <span>Estado</span>
+                <strong>Operación continua</strong>
+              </div>
+              <button data-go="08R">Revisar</button>
+            </section>
+
+            <section class="suggestion-card">
+              <span>Sugerencia</span>
+              <strong>Ajusta la temperatura a 4 °C y evita abrirlo por periodos largos.</strong>
+              <small>Ahorro estimado: $74 MXN/mes</small>
+            </section>
+
+            <nav class="bottom-nav" aria-label="Navegación principal">
+              <button data-go="06"><span>⌂</span>Inicio</button>
+              <button class="active" data-go="07"><span>▦</span>Dispositivos</button>
+              <button data-go="10"><span>▥</span>Estadísticas</button>
+              <button data-go="11"><span>!</span>Alertas</button>
+              <button data-go="14"><span>○</span>Perfil</button>
+            </nav>
+          </section>
+        </article>
+
+        <article class="phone" data-screen="08T">
+          <div class="device-top"></div>
+          <section class="screen app-screen detail-screen">
+            <header class="app-header">
+              <button class="icon-button back" data-go="07" aria-label="Regresar">‹</button>
+              <div>
+                <p class="screen-number">08 · Detalle</p>
+                <h2>Televisión</h2>
+              </div>
+            </header>
+
+            <section class="detail-hero">
+              <span class="device-icon entertainment large"></span>
+              <div>
+                <span>Consumo hoy</span>
+                <strong>1.9 kWh</strong>
+                <small>$5.70 MXN estimados</small>
+              </div>
+            </section>
+
+            <div class="metric-grid">
+              <div>
+                <span>Mes</span>
+                <strong>7.4 kWh</strong>
+              </div>
+              <div>
+                <span>Costo</span>
+                <strong>$22</strong>
+              </div>
+              <div>
+                <span>Pico</span>
+                <strong>21:15</strong>
+              </div>
+            </div>
+
+            <section class="chart-card">
+              <div class="section-heading compact">
+                <h3>Últimos 7 días</h3>
+                <button data-go="08T">Historial</button>
+              </div>
+              <div class="bar-chart entertainment-bars">
+                <span style="height: 24%"></span>
+                <span style="height: 32%"></span>
+                <span style="height: 28%"></span>
+                <span style="height: 46%"></span>
+                <span style="height: 58%"></span>
+                <span style="height: 64%"></span>
+                <span style="height: 35%"></span>
+              </div>
+            </section>
+
+            <section class="schedule-card">
+              <div>
+                <span>Programación</span>
+                <strong>18:00 - 23:30</strong>
+              </div>
+              <button data-go="08T">Editar</button>
+            </section>
+
+            <section class="suggestion-card">
+              <span>Sugerencia</span>
+              <strong>Apaga el modo stand-by durante la noche para cortar consumo fantasma.</strong>
+              <small>Ahorro estimado: $22 MXN/mes</small>
+            </section>
+
+            <nav class="bottom-nav" aria-label="Navegación principal">
+              <button data-go="06"><span>⌂</span>Inicio</button>
+              <button class="active" data-go="07"><span>▦</span>Dispositivos</button>
+              <button data-go="10"><span>▥</span>Estadísticas</button>
+              <button data-go="11"><span>!</span>Alertas</button>
+              <button data-go="14"><span>○</span>Perfil</button>
+            </nav>
+          </section>
+        </article>
+
+        <article class="phone" data-screen="09">
+          <div class="device-top"></div>
+          <section class="screen app-screen add-screen">
+            <header class="app-header">
+              <button class="icon-button back" data-go="07" aria-label="Regresar">‹</button>
+              <div>
+                <p class="screen-number">09 · Alta</p>
+                <h2>Agregar dispositivo</h2>
+              </div>
+            </header>
+
+            <button class="qr-card" type="button" data-go="23">
+              <div class="qr-grid">
+                <span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span>
+              </div>
+              <div>
+                <strong>Escanear código QR</strong>
+                <small>Busca el código del medidor inteligente o captura los datos manualmente.</small>
+              </div>
+            </button>
+
+            <form class="device-form">
+              <label>
+                Nombre del aparato
+                <input type="text" value="Aire acondicionado" />
+              </label>
+              <label>
+                Categoría
+                <input type="text" value="Climatización" />
+              </label>
+              <label>
+                Potencia nominal
+                <input type="text" value="2400 W" />
+              </label>
+              <label>
+                Habitación
+                <input type="text" value="Recámara principal" />
+              </label>
+            </form>
+
+            <button class="primary-action add-device-cta" data-go="22">Guardar dispositivo</button>
+
+            <nav class="bottom-nav" aria-label="Navegación principal">
+              <button data-go="06"><span>⌂</span>Inicio</button>
+              <button class="active" data-go="07"><span>▦</span>Dispositivos</button>
+              <button data-go="10"><span>▥</span>Estadísticas</button>
+              <button data-go="11"><span>!</span>Alertas</button>
+              <button data-go="14"><span>○</span>Perfil</button>
+            </nav>
+          </section>
+        </article>
+
+        <article class="phone" data-screen="10">
+          <div class="device-top"></div>
+          <section class="screen app-screen stats-screen">
+            <header class="app-header">
+              <div>
+                <p class="screen-number">10 · Estadísticas</p>
+                <h2>Análisis</h2>
+              </div>
+              <button class="icon-button" data-go="13" aria-label="Comparar">%</button>
+            </header>
+
+            <div class="filter-tabs time-tabs">
+              <button>Semana</button>
+              <button class="active">Mes</button>
+              <button>Año</button>
+            </div>
+
+            <section class="stats-total">
+              <span>Total mensual</span>
+              <strong>214 kWh</strong>
+              <small>12% menos que marzo</small>
+              <div class="wide-bars">
+                <span style="height: 46%"></span>
+                <span style="height: 61%"></span>
+                <span style="height: 52%"></span>
+                <span style="height: 82%"></span>
+                <span style="height: 68%"></span>
+                <span style="height: 74%"></span>
+                <span style="height: 58%"></span>
+              </div>
+            </section>
+
+            <section class="breakdown-card">
+              <div class="section-heading compact">
+                <h3>Por dispositivo</h3>
+                <button data-go="13">Comparar</button>
+              </div>
+              <div class="progress-list">
+                <div>
+                  <span>Aire acondicionado</span>
+                  <strong>35%</strong>
+                  <i style="--value: 35%"></i>
+                </div>
+                <div>
+                  <span>Refrigerador</span>
+                  <strong>22%</strong>
+                  <i style="--value: 22%"></i>
+                </div>
+                <div>
+                  <span>Iluminación</span>
+                  <strong>14%</strong>
+                  <i style="--value: 14%"></i>
+                </div>
+                <div>
+                  <span>Entretenimiento</span>
+                  <strong>9%</strong>
+                  <i style="--value: 9%"></i>
+                </div>
+              </div>
+            </section>
+
+            <nav class="bottom-nav" aria-label="Navegación principal">
+              <button data-go="06"><span>⌂</span>Inicio</button>
+              <button data-go="07"><span>▦</span>Dispositivos</button>
+              <button class="active" data-go="10"><span>▥</span>Estadísticas</button>
+              <button data-go="11"><span>!</span>Alertas</button>
+              <button data-go="14"><span>○</span>Perfil</button>
+            </nav>
+          </section>
+        </article>
+
+        <article class="phone" data-screen="11">
+          <div class="device-top"></div>
+          <section class="screen app-screen alerts-screen">
+            <header class="app-header">
+              <div>
+                <p class="screen-number">11 · Alertas</p>
+                <h2>Centro de alertas</h2>
+              </div>
+              <button class="icon-button" data-go="15" aria-label="Configurar alertas">⚙</button>
+            </header>
+
+            <section class="alert-priority">
+              <span>Pico activo</span>
+              <strong>El AC superó tu consumo habitual por 18%.</strong>
+              <small>Hoy · 22:10 · Recámara principal</small>
+            </section>
+
+            <section class="timeline-group">
+              <div class="section-heading compact">
+                <h3>Hoy</h3>
+                <button>3 alertas</button>
+              </div>
+              <button class="timeline-item danger" data-go="25">
+                <i></i>
+                <span>
+                  <strong>Pico de consumo</strong>
+                  <small>Aire acondicionado · hace 18 min</small>
+                </span>
+              </button>
+              <button class="timeline-item warning" data-go="20">
+                <i></i>
+                <span>
+                  <strong>Meta mensual en riesgo</strong>
+                  <small>Vas al 82% del presupuesto · 6 días restantes</small>
+                </span>
+              </button>
+              <button class="timeline-item" data-go="08T">
+                <i></i>
+                <span>
+                  <strong>Dispositivo encendido</strong>
+                  <small>Televisión de sala · 3 h sin actividad</small>
+                </span>
+              </button>
+            </section>
+
+            <section class="toggle-panel">
+              <div>
+                <span>Picos de consumo</span>
+                <strong>Activado</strong>
+              </div>
+              <em class="switch on"></em>
+              <div>
+                <span>Metas superadas</span>
+                <strong>Activado</strong>
+              </div>
+              <em class="switch on"></em>
+              <div>
+                <span>Olvidados encendidos</span>
+                <strong>Activado</strong>
+              </div>
+              <em class="switch on"></em>
+            </section>
+
+            <nav class="bottom-nav" aria-label="Navegación principal">
+              <button data-go="06"><span>⌂</span>Inicio</button>
+              <button data-go="07"><span>▦</span>Dispositivos</button>
+              <button data-go="10"><span>▥</span>Estadísticas</button>
+              <button class="active" data-go="11"><span>!</span>Alertas</button>
+              <button data-go="14"><span>○</span>Perfil</button>
+            </nav>
+          </section>
+        </article>
+
+        <article class="phone" data-screen="12">
+          <div class="device-top"></div>
+          <section class="screen app-screen savings-list-screen">
+            <header class="app-header">
+              <div>
+                <p class="screen-number">12 · Ahorro</p>
+                <h2>Sugerencias</h2>
+              </div>
+              <button class="icon-button" data-go="16" aria-label="Reporte mensual">↗</button>
+            </header>
+
+            <section class="saving-hero">
+              <span>Ahorro máximo alcanzable</span>
+              <strong>$286</strong>
+              <small>MXN este mes si aplicas las 4 acciones principales.</small>
+            </section>
+
+            <div class="recommendation-list">
+              <button class="recommendation-card high" data-go="08">
+                <span>Impacto alto</span>
+                <strong>Apaga el AC 2 horas antes de dormir</strong>
+                <small>Ahorro estimado: $128 MXN/mes</small>
+                <em>$128</em>
+              </button>
+              <button class="recommendation-card" data-go="08R">
+                <span>Impacto medio</span>
+                <strong>Ajusta refrigerador a 4 °C</strong>
+                <small>Reduce ciclos de enfriamiento innecesarios.</small>
+                <em>$74</em>
+              </button>
+              <button class="recommendation-card" data-go="08T">
+                <span>Rápido</span>
+                <strong>Desconecta stand-by nocturno</strong>
+                <small>TV, consola y bocinas consumen sin usarse.</small>
+                <em>$39</em>
+              </button>
+              <button class="recommendation-card">
+                <span>Hábito</span>
+                <strong>Programa lavado fuera de horario pico</strong>
+                <small>Mueve cargas intensivas a la mañana.</small>
+                <em>$45</em>
+              </button>
+            </div>
+
+            <button class="primary-action add-device-cta" data-go="16">Ver reporte mensual</button>
+
+            <nav class="bottom-nav" aria-label="Navegación principal">
+              <button data-go="06"><span>⌂</span>Inicio</button>
+              <button data-go="07"><span>▦</span>Dispositivos</button>
+              <button data-go="10"><span>▥</span>Estadísticas</button>
+              <button data-go="11"><span>!</span>Alertas</button>
+              <button data-go="14"><span>○</span>Perfil</button>
+            </nav>
+          </section>
+        </article>
+
+        <article class="phone" data-screen="13">
+          <div class="device-top"></div>
+          <section class="screen app-screen compare-screen">
+            <header class="app-header">
+              <button class="icon-button back" data-go="10" aria-label="Regresar">‹</button>
+              <div>
+                <p class="screen-number">13 · Comparativa</p>
+                <h2>Mes contra mes</h2>
+              </div>
+            </header>
+
+            <div class="compare-selector">
+              <button class="active">Abril</button>
+              <button>Marzo</button>
+            </div>
+
+            <section class="comparison-card">
+              <div>
+                <span>Variación</span>
+                <strong>-12%</strong>
+                <small>Ahorraste $84 MXN frente al periodo anterior.</small>
+              </div>
+              <div class="paired-bars">
+                <span class="current" style="height: 62%"></span>
+                <span class="previous" style="height: 78%"></span>
+                <span class="current" style="height: 54%"></span>
+                <span class="previous" style="height: 72%"></span>
+                <span class="current" style="height: 69%"></span>
+                <span class="previous" style="height: 88%"></span>
+              </div>
+            </section>
+
+            <section class="trend-card">
+              <div class="section-heading compact">
+                <h3>Tendencia 6 meses</h3>
+                <button>kWh</button>
+              </div>
+              <div class="trend-line">
+                <i style="height: 72%"></i>
+                <i style="height: 76%"></i>
+                <i style="height: 68%"></i>
+                <i style="height: 61%"></i>
+                <i style="height: 57%"></i>
+                <i style="height: 52%"></i>
+              </div>
+            </section>
+
+            <section class="compare-insight">
+              <span>Principal diferencia</span>
+              <strong>El AC consumió 21 kWh menos gracias a la programación nocturna.</strong>
+            </section>
+
+            <nav class="bottom-nav" aria-label="Navegación principal">
+              <button data-go="06"><span>⌂</span>Inicio</button>
+              <button data-go="07"><span>▦</span>Dispositivos</button>
+              <button class="active" data-go="10"><span>▥</span>Estadísticas</button>
+              <button data-go="11"><span>!</span>Alertas</button>
+              <button data-go="14"><span>○</span>Perfil</button>
+            </nav>
+          </section>
+        </article>
+
+        <article class="phone" data-screen="14">
+          <div class="device-top"></div>
+          <section class="screen app-screen profile-screen">
+            <header class="app-header">
+              <div>
+                <p class="screen-number">14 · Perfil</p>
+                <h2>Ana López</h2>
+              </div>
+              <button class="icon-button" data-go="15" aria-label="Configuración">⚙</button>
+            </header>
+
+            <section class="profile-card">
+              <div class="avatar">AL</div>
+              <div>
+                <span>Plan activo</span>
+                <strong>Voltiva Hogar Plus</strong>
+                <small>$810 MXN/año · Renovación en agosto</small>
+              </div>
+            </section>
+
+            <section class="home-info-card">
+              <div>
+                <span>Hogar</span>
+                <strong>92 m²</strong>
+                <small>3 habitantes</small>
+              </div>
+              <div>
+                <span>Tarifa</span>
+                <strong>CFE DAC</strong>
+                <small>$3.00 por kWh</small>
+              </div>
+            </section>
+
+            <button class="profile-edit-shortcut" data-go="24">
+              <span>Hogar y tarifa</span>
+              <strong>Editar datos de cálculo</strong>
+            </button>
+
+            <section class="badges-card">
+              <div class="section-heading compact">
+                <h3>Logros</h3>
+                <button data-go="26">4/8</button>
+              </div>
+              <div class="badge-grid">
+                <span>10%</span>
+                <span>AC</span>
+                <span>Meta</span>
+                <span>PDF</span>
+              </div>
+            </section>
+
+            <button class="logout-button" data-go="05">Cerrar sesión</button>
+
+            <nav class="bottom-nav" aria-label="Navegación principal">
+              <button data-go="06"><span>⌂</span>Inicio</button>
+              <button data-go="07"><span>▦</span>Dispositivos</button>
+              <button data-go="10"><span>▥</span>Estadísticas</button>
+              <button data-go="11"><span>!</span>Alertas</button>
+              <button class="active" data-go="14"><span>○</span>Perfil</button>
+            </nav>
+          </section>
+        </article>
+
+        <article class="phone" data-screen="15">
+          <div class="device-top"></div>
+          <section class="screen app-screen settings-screen">
+            <header class="app-header">
+              <button class="icon-button back" data-go="14" aria-label="Regresar">‹</button>
+              <div>
+                <p class="screen-number">15 · Configuración</p>
+                <h2>Ajustes</h2>
+              </div>
+            </header>
+
+            <section class="settings-group">
+              <h3>Cuenta</h3>
+              <label>
+                Nombre
+                <input type="text" value="Ana López" />
+              </label>
+              <label>
+                Correo
+                <input type="email" value="ana@hogar.mx" />
+              </label>
+            </section>
+
+            <section class="settings-group compact-settings">
+              <h3>Notificaciones</h3>
+              <button type="button" data-go="28">
+                <span>Picos de consumo</span>
+                <em class="switch on"></em>
+              </button>
+              <button type="button" data-go="28">
+                <span>Metas superadas</span>
+                <em class="switch on"></em>
+              </button>
+            </section>
+
+            <section class="settings-group">
+              <h3>Tarifa eléctrica</h3>
+              <button class="settings-link-row" type="button" data-go="29">
+                <span>Costo por kWh</span>
+                <strong>$3.00 MXN</strong>
+              </button>
+            </section>
+
+            <section class="settings-group danger-zone">
+              <h3>Privacidad y datos</h3>
+              <button data-go="27">Exportar datos</button>
+              <button data-go="27">Eliminar cuenta</button>
+            </section>
+
+            <button class="primary-action add-device-cta" data-go="14">Guardar cambios</button>
+
+            <nav class="bottom-nav" aria-label="Navegación principal">
+              <button data-go="06"><span>⌂</span>Inicio</button>
+              <button data-go="07"><span>▦</span>Dispositivos</button>
+              <button data-go="10"><span>▥</span>Estadísticas</button>
+              <button data-go="11"><span>!</span>Alertas</button>
+              <button class="active" data-go="14"><span>○</span>Perfil</button>
+            </nav>
+          </section>
+        </article>
+
+        <article class="phone" data-screen="16">
+          <div class="device-top"></div>
+          <section class="screen app-screen report-screen">
+            <header class="app-header">
+              <button class="icon-button back" data-go="12" aria-label="Regresar">‹</button>
+              <div>
+                <p class="screen-number">16 · Reporte</p>
+                <h2>Abril 2026</h2>
+              </div>
+              <button class="icon-button" data-go="17" aria-label="Exportar">↗</button>
+            </header>
+
+            <section class="report-hero">
+              <span>Resumen mensual</span>
+              <strong>$642</strong>
+              <small>214 kWh · 12% menos que marzo</small>
+              <div class="report-kpis">
+                <div>
+                  <span>Ahorro</span>
+                  <strong>$84</strong>
+                </div>
+                <div>
+                  <span>Meta</span>
+                  <strong>82%</strong>
+                </div>
+              </div>
+            </section>
+
+            <section class="donut-card">
+              <div class="donut-chart" aria-label="Distribución por categoría">
+                <span></span>
+              </div>
+              <div class="donut-legend">
+                <div><i class="climate-dot"></i><span>Climatización</span><strong>35%</strong></div>
+                <div><i class="kitchen-dot"></i><span>Cocina</span><strong>22%</strong></div>
+                <div><i class="media-dot"></i><span>Entretenimiento</span><strong>14%</strong></div>
+                <div><i class="base-dot"></i><span>Otros</span><strong>29%</strong></div>
+              </div>
+            </section>
+
+            <section class="insight-stack">
+              <button data-go="08">
+                <span>Insight principal</span>
+                <strong>El AC bajó 21 kWh después de limitar el horario nocturno.</strong>
+              </button>
+              <button data-go="20">
+                <span>Meta del mes</span>
+                <strong>Faltan $96 MXN para mantenerte debajo del presupuesto.</strong>
+              </button>
+            </section>
+
+            <div class="split-actions">
+              <button class="primary-action" data-go="17">Exportar PDF</button>
+              <button class="secondary-action" data-go="17">Compartir</button>
+            </div>
+
+            <nav class="bottom-nav" aria-label="Navegación principal">
+              <button data-go="06"><span>⌂</span>Inicio</button>
+              <button data-go="07"><span>▦</span>Dispositivos</button>
+              <button class="active" data-go="10"><span>▥</span>Estadísticas</button>
+              <button data-go="11"><span>!</span>Alertas</button>
+              <button data-go="14"><span>○</span>Perfil</button>
+            </nav>
+          </section>
+        </article>
+
+        <article class="phone" data-screen="17">
+          <div class="device-top"></div>
+          <section class="screen app-screen export-screen">
+            <header class="app-header">
+              <button class="icon-button back" data-go="16" aria-label="Regresar">‹</button>
+              <div>
+                <p class="screen-number">17 · Exportar</p>
+                <h2>Compartir reporte</h2>
+              </div>
+            </header>
+
+            <section class="export-preview">
+              <div>
+                <span>Vista previa</span>
+                <strong>Reporte Abril</strong>
+                <small>4 páginas · PDF optimizado para enviar</small>
+              </div>
+              <div class="mini-report">
+                <i style="height: 72%"></i>
+                <i style="height: 54%"></i>
+                <i style="height: 38%"></i>
+                <i style="height: 62%"></i>
+              </div>
+            </section>
+
+            <section class="format-card">
+              <h3>Formato</h3>
+              <div class="format-grid">
+                <button class="active">PDF</button>
+                <button>Imagen</button>
+                <button>CSV</button>
+              </div>
+            </section>
+
+            <section class="share-card">
+              <h3>Enviar a</h3>
+              <button><span>Correo</span><strong>ana@hogar.mx</strong></button>
+              <button><span>WhatsApp</span><strong>Resumen familiar</strong></button>
+              <button><span>Guardar</span><strong>Archivos del teléfono</strong></button>
+            </section>
+
+            <section class="report-note">
+              <span>Incluye</span>
+              <strong>Consumo, costo, comparativa mensual, dona por categoría e insights automáticos.</strong>
+            </section>
+
+            <button class="primary-action add-device-cta" data-go="16">Generar reporte</button>
+          </section>
+        </article>
+
+        <article class="phone" data-screen="18">
+          <div class="device-top"></div>
+          <section class="screen app-screen history-screen">
+            <header class="app-header">
+              <button class="icon-button back" data-go="08" aria-label="Regresar">‹</button>
+              <div>
+                <p class="screen-number">18 · Historial</p>
+                <h2>Aire acondicionado</h2>
+              </div>
+            </header>
+
+            <div class="filter-tabs time-tabs">
+              <button>Día</button>
+              <button class="active">Semana</button>
+              <button>Mes</button>
+            </div>
+
+            <section class="history-total">
+              <span>Últimos 30 días</span>
+              <strong>74 kWh</strong>
+              <small>$222 MXN · pico frecuente entre 21:00 y 23:00</small>
+            </section>
+
+            <section class="heatmap-card">
+              <div class="section-heading compact">
+                <h3>Mapa horario</h3>
+                <button>kWh</button>
+              </div>
+              <div class="heatmap-grid">
+                <span></span><span class="mid"></span><span></span><span class="hot"></span><span class="hot"></span><span class="mid"></span>
+                <span></span><span></span><span class="mid"></span><span class="hot"></span><span class="mid"></span><span></span>
+                <span></span><span class="mid"></span><span></span><span></span><span class="hot"></span><span class="mid"></span>
+                <span></span><span></span><span class="mid"></span><span class="mid"></span><span class="hot"></span><span></span>
+              </div>
+            </section>
+
+            <section class="history-events">
+              <button data-go="19">
+                <span>22 abril</span>
+                <strong>Programación redujo 3.8 kWh</strong>
+              </button>
+              <button data-go="08">
+                <span>18 abril</span>
+                <strong>Pico por temperatura exterior alta</strong>
+              </button>
+              <button data-go="12">
+                <span>12 abril</span>
+                <strong>Sugerencia aplicada parcialmente</strong>
+              </button>
+            </section>
+
+            <nav class="bottom-nav" aria-label="Navegación principal">
+              <button data-go="06"><span>⌂</span>Inicio</button>
+              <button class="active" data-go="07"><span>▦</span>Dispositivos</button>
+              <button data-go="10"><span>▥</span>Estadísticas</button>
+              <button data-go="11"><span>!</span>Alertas</button>
+              <button data-go="14"><span>○</span>Perfil</button>
+            </nav>
+          </section>
+        </article>
+
+        <article class="phone" data-screen="19">
+          <div class="device-top"></div>
+          <section class="screen app-screen schedule-screen">
+            <header class="app-header">
+              <button class="icon-button back" data-go="08" aria-label="Regresar">‹</button>
+              <div>
+                <p class="screen-number">19 · Programación</p>
+                <h2>Horario del AC</h2>
+              </div>
+            </header>
+
+            <section class="time-window">
+              <span>Operación recomendada</span>
+              <strong>20:00 - 00:30</strong>
+              <small>Reduce 2 h frente a tu rutina actual</small>
+            </section>
+
+            <section class="day-picker">
+              <h3>Días activos</h3>
+              <div>
+                <button>L</button>
+                <button>M</button>
+                <button class="active">M</button>
+                <button class="active">J</button>
+                <button class="active">V</button>
+                <button>S</button>
+                <button>D</button>
+              </div>
+            </section>
+
+            <section class="schedule-summary-card">
+              <div class="schedule-summary-head">
+                <span>Ventana activa</span>
+                <strong>4 h 30 min</strong>
+              </div>
+              <div class="time-pair">
+                <div>
+                  <span>Desde</span>
+                  <strong>20:00</strong>
+                </div>
+                <div>
+                  <span>Hasta</span>
+                  <strong>00:30</strong>
+                </div>
+              </div>
+              <div class="schedule-timeline">
+                <span>18</span>
+                <i></i>
+                <b></b>
+                <span>02</span>
+              </div>
+              <small>El AC se apagará automáticamente a las 00:30.</small>
+            </section>
+
+            <section class="automation-card">
+              <button class="active">
+                <span>Modo ahorro</span>
+                <strong>Apagar antes de dormir</strong>
+              </button>
+              <button>
+                <span>Modo confort</span>
+                <strong>Mantener temperatura estable</strong>
+              </button>
+            </section>
+
+            <button class="primary-action add-device-cta" data-go="08">Guardar horario</button>
+
+            <nav class="bottom-nav" aria-label="Navegación principal">
+              <button data-go="06"><span>⌂</span>Inicio</button>
+              <button class="active" data-go="07"><span>▦</span>Dispositivos</button>
+              <button data-go="10"><span>▥</span>Estadísticas</button>
+              <button data-go="11"><span>!</span>Alertas</button>
+              <button data-go="14"><span>○</span>Perfil</button>
+            </nav>
+          </section>
+        </article>
+
+        <article class="phone" data-screen="20">
+          <div class="device-top"></div>
+          <section class="screen app-screen goal-screen">
+            <header class="app-header">
+              <button class="icon-button back" data-go="11" aria-label="Regresar">‹</button>
+              <div>
+                <p class="screen-number">20 · Meta</p>
+                <h2>Presupuesto mensual</h2>
+              </div>
+            </header>
+
+            <section class="goal-meter">
+              <span>Meta configurada</span>
+              <strong>$780</strong>
+              <small>Has usado $642 · quedan $138</small>
+              <div class="goal-ring"><i></i><b>82%</b></div>
+            </section>
+
+            <section class="budget-card">
+              <div>
+                <span>Límite sugerido</span>
+                <strong>$720</strong>
+              </div>
+              <button data-go="30">Ajustar</button>
+            </section>
+
+            <section class="goal-actions">
+              <button data-go="19">
+                <span>Mayor impacto</span>
+                <strong>Recorta AC nocturno 2 horas</strong>
+                <em>-$128</em>
+              </button>
+              <button data-go="08R">
+                <span>Medio</span>
+                <strong>Optimiza refrigerador a 4 °C</strong>
+                <em>-$74</em>
+              </button>
+              <button data-go="30">
+                <span>Plan completo</span>
+                <strong>Ver sugerencias restantes</strong>
+                <em>4</em>
+              </button>
+            </section>
+
+            <button class="primary-action add-device-cta" data-go="16">Ver impacto en reporte</button>
+
+            <nav class="bottom-nav" aria-label="Navegación principal">
+              <button data-go="06"><span>⌂</span>Inicio</button>
+              <button data-go="07"><span>▦</span>Dispositivos</button>
+              <button data-go="10"><span>▥</span>Estadísticas</button>
+              <button class="active" data-go="11"><span>!</span>Alertas</button>
+              <button data-go="14"><span>○</span>Perfil</button>
+            </nav>
+          </section>
+        </article>
+
+        <article class="phone" data-screen="21">
+          <div class="device-top"></div>
+          <section class="screen auth-screen recovery-screen">
+            <div class="auth-brand">
+              <div class="small-mark">
+                <svg viewBox="0 0 48 48" aria-hidden="true">
+                  <path d="M27.8 4 11 28.4h12.4L20.2 44 37 19.6H24.6L27.8 4Z" />
+                </svg>
+              </div>
+              <div>
+                <p class="screen-number">21 · Recuperar</p>
+                <h2>Restablece tu acceso</h2>
+              </div>
+            </div>
+
+            <section class="recovery-panel">
+              <span>Paso 1 de 2</span>
+              <strong>Te enviaremos un código temporal</strong>
+              <small>Usa el correo ligado a tu hogar para proteger tus datos de consumo.</small>
+            </section>
+
+            <form class="auth-form active">
+              <label>
+                Correo
+                <input type="email" value="ana@hogar.mx" />
+              </label>
+              <button class="primary-action" type="button" data-go="05">Enviar código</button>
+              <button class="ghost-action" type="button" data-go="05">Volver al login</button>
+            </form>
+          </section>
+        </article>
+
+        <article class="phone" data-screen="22">
+          <div class="device-top"></div>
+          <section class="screen app-screen success-screen">
+            <header class="app-header">
+              <button class="icon-button back" data-go="07" aria-label="Regresar">‹</button>
+              <div>
+                <p class="screen-number">22 · Confirmación</p>
+                <h2>Dispositivo agregado</h2>
+              </div>
+            </header>
+
+            <section class="success-hero">
+              <div class="success-mark">✓</div>
+              <span>Listo para monitorear</span>
+              <strong>Aire acondicionado</strong>
+              <small>Se registró en Recámara con potencia nominal de 1200 W.</small>
+            </section>
+
+            <section class="setup-checklist">
+              <div class="done"><i></i><span>Datos básicos guardados</span></div>
+              <div class="done"><i></i><span>Habitación asignada</span></div>
+              <div><i></i><span>Primer lectura pendiente</span></div>
+            </section>
+
+            <div class="split-actions">
+              <button class="primary-action" data-go="08">Ver detalle</button>
+              <button class="secondary-action" data-go="07">Ir a lista</button>
+            </div>
+
+            <nav class="bottom-nav" aria-label="Navegación principal">
+              <button data-go="06"><span>⌂</span>Inicio</button>
+              <button class="active" data-go="07"><span>▦</span>Dispositivos</button>
+              <button data-go="10"><span>▥</span>Estadísticas</button>
+              <button data-go="11"><span>!</span>Alertas</button>
+              <button data-go="14"><span>○</span>Perfil</button>
+            </nav>
+          </section>
+        </article>
+
+        <article class="phone" data-screen="23">
+          <div class="device-top"></div>
+          <section class="screen app-screen scanner-screen">
+            <header class="app-header">
+              <button class="icon-button back" data-go="09" aria-label="Regresar">‹</button>
+              <div>
+                <p class="screen-number">23 · Escaneo</p>
+                <h2>Escanear QR</h2>
+              </div>
+            </header>
+
+            <section class="scan-viewfinder">
+              <span></span><span></span><span></span><span></span>
+              <div class="scan-line"></div>
+              <strong>Alinea el código del dispositivo</strong>
+            </section>
+
+            <section class="scan-status">
+              <span>Detección automática</span>
+              <strong>Buscando medidor compatible...</strong>
+              <small>Si el código no se lee, captura los datos manualmente.</small>
+            </section>
+
+            <button class="secondary-action full-width-action" data-go="09">Ingresar manualmente</button>
+            <button class="primary-action add-device-cta" data-go="22">Usar código detectado</button>
+          </section>
+        </article>
+
+        <article class="phone" data-screen="24">
+          <div class="device-top"></div>
+          <section class="screen app-screen home-edit-screen">
+            <header class="app-header">
+              <button class="icon-button back" data-go="14" aria-label="Regresar">‹</button>
+              <div>
+                <p class="screen-number">24 · Hogar</p>
+                <h2>Datos de cálculo</h2>
+              </div>
+            </header>
+
+            <section class="home-calculator">
+              <span>Precisión estimada</span>
+              <strong>Alta</strong>
+              <small>Estos datos afinan los costos y comparativas de consumo.</small>
+            </section>
+
+            <form class="device-form home-form">
+              <label>
+                Tamaño del hogar
+                <input type="text" value="92 m²" />
+              </label>
+              <label>
+                Habitantes
+                <input type="text" value="3 personas" />
+              </label>
+              <label>
+                Tarifa CFE
+                <input type="text" value="DAC" />
+              </label>
+              <label>
+                Costo por kWh
+                <input type="text" value="$3.00 MXN" />
+              </label>
+            </form>
+
+            <section class="tariff-note">
+              <span>Impacto</span>
+              <strong>Cambiar la tarifa recalcula reportes, metas y sugerencias históricas.</strong>
+            </section>
+
+            <button class="primary-action add-device-cta" data-go="14">Guardar datos</button>
+          </section>
+        </article>
+
+        <article class="phone" data-screen="25">
+          <div class="device-top"></div>
+          <section class="screen app-screen alert-detail-screen">
+            <header class="app-header">
+              <button class="icon-button back" data-go="11" aria-label="Regresar">‹</button>
+              <div>
+                <p class="screen-number">25 · Alerta</p>
+                <h2>Pico de consumo</h2>
+              </div>
+            </header>
+
+            <section class="alert-detail-hero">
+              <span>Riesgo alto</span>
+              <strong>+18%</strong>
+              <small>El AC superó su patrón habitual entre 21:00 y 23:00.</small>
+            </section>
+
+            <section class="alert-cause-card">
+              <h3>Causa probable</h3>
+              <div>
+                <span>Temperatura exterior</span>
+                <strong>31 °C</strong>
+              </div>
+              <div>
+                <span>Tiempo encendido</span>
+                <strong>5 h 20 min</strong>
+              </div>
+              <div>
+                <span>Costo extra</span>
+                <strong>$18.40</strong>
+              </div>
+            </section>
+
+            <section class="alert-action-list">
+              <button data-go="19">
+                <span>Acción recomendada</span>
+                <strong>Aplicar apagado automático a las 00:30</strong>
+              </button>
+              <button data-go="08">
+                <span>Ver origen</span>
+                <strong>Abrir detalle del aire acondicionado</strong>
+              </button>
+            </section>
+
+            <button class="primary-action add-device-cta" data-go="11">Marcar como revisada</button>
+
+            <nav class="bottom-nav" aria-label="Navegación principal">
+              <button data-go="06"><span>⌂</span>Inicio</button>
+              <button data-go="07"><span>▦</span>Dispositivos</button>
+              <button data-go="10"><span>▥</span>Estadísticas</button>
+              <button class="active" data-go="11"><span>!</span>Alertas</button>
+              <button data-go="14"><span>○</span>Perfil</button>
+            </nav>
+          </section>
+        </article>
+
+        <article class="phone" data-screen="26">
+          <div class="device-top"></div>
+          <section class="screen app-screen achievements-screen">
+            <header class="app-header">
+              <button class="icon-button back" data-go="14" aria-label="Regresar">‹</button>
+              <div>
+                <p class="screen-number">26 · Logros</p>
+                <h2>Progreso de ahorro</h2>
+              </div>
+            </header>
+
+            <section class="achievement-hero">
+              <span>Nivel actual</span>
+              <strong>Hogar eficiente</strong>
+              <small>4 de 8 logros desbloqueados este trimestre.</small>
+            </section>
+
+            <section class="achievement-grid">
+              <button class="unlocked"><span>10%</span><strong>Reducción mensual</strong></button>
+              <button class="unlocked"><span>AC</span><strong>Horario optimizado</strong></button>
+              <button class="unlocked"><span>Meta</span><strong>Presupuesto activo</strong></button>
+              <button class="unlocked"><span>PDF</span><strong>Reporte exportado</strong></button>
+              <button><span>7d</span><strong>Semana sin picos</strong></button>
+              <button><span>4°C</span><strong>Refrigerador óptimo</strong></button>
+            </section>
+
+            <section class="next-achievement">
+              <span>Siguiente logro</span>
+              <strong>Mantén el consumo bajo $720 durante 6 días más.</strong>
+            </section>
+
+            <nav class="bottom-nav" aria-label="Navegación principal">
+              <button data-go="06"><span>⌂</span>Inicio</button>
+              <button data-go="07"><span>▦</span>Dispositivos</button>
+              <button data-go="10"><span>▥</span>Estadísticas</button>
+              <button data-go="11"><span>!</span>Alertas</button>
+              <button class="active" data-go="14"><span>○</span>Perfil</button>
+            </nav>
+          </section>
+        </article>
+
+        <article class="phone" data-screen="27">
+          <div class="device-top"></div>
+          <section class="screen app-screen privacy-screen">
+            <header class="app-header">
+              <button class="icon-button back" data-go="15" aria-label="Regresar">‹</button>
+              <div>
+                <p class="screen-number">27 · Privacidad</p>
+                <h2>Datos y seguridad</h2>
+              </div>
+            </header>
+
+            <section class="privacy-hero">
+              <span>Control de datos</span>
+              <strong>Tú decides qué conservar</strong>
+              <small>Exporta consumos, elimina historial o solicita borrado total de cuenta.</small>
+            </section>
+
+            <section class="data-actions">
+              <button>
+                <span>Exportación</span>
+                <strong>Descargar CSV de consumo</strong>
+                <small>Incluye dispositivos, costos y fechas.</small>
+              </button>
+              <button>
+                <span>Respaldo</span>
+                <strong>Enviar copia por correo</strong>
+                <small>Reporte seguro a ana@hogar.mx.</small>
+              </button>
+              <button class="danger">
+                <span>Zona delicada</span>
+                <strong>Eliminar cuenta y sensores</strong>
+                <small>Acción irreversible después de confirmar.</small>
+              </button>
+            </section>
+
+            <button class="primary-action add-device-cta" data-go="15">Guardar preferencia</button>
+          </section>
+        </article>
+
+        <article class="phone" data-screen="28">
+          <div class="device-top"></div>
+          <section class="screen app-screen notification-settings-screen">
+            <header class="app-header">
+              <button class="icon-button back" data-go="15" aria-label="Regresar">‹</button>
+              <div>
+                <p class="screen-number">28 · Avisos</p>
+                <h2>Preferencias</h2>
+              </div>
+            </header>
+
+            <section class="notification-hero">
+              <span>Resumen activo</span>
+              <strong>3 tipos de alerta</strong>
+              <small>Recibirás avisos cuando el consumo tenga impacto real en el costo.</small>
+            </section>
+
+            <section class="notification-list">
+              <button type="button">
+                <span>Picos de consumo</span>
+                <strong>Inmediato</strong>
+                <em class="switch on"></em>
+              </button>
+              <button type="button">
+                <span>Meta mensual en riesgo</span>
+                <strong>Diario · 19:00</strong>
+                <em class="switch on"></em>
+              </button>
+              <button type="button">
+                <span>Dispositivo encendido</span>
+                <strong>Después de 2 h</strong>
+                <em class="switch on"></em>
+              </button>
+              <button type="button">
+                <span>Reporte semanal</span>
+                <strong>Lunes · 08:00</strong>
+                <em class="switch"></em>
+              </button>
+            </section>
+
+            <button class="primary-action add-device-cta" data-go="15">Aplicar cambios</button>
+          </section>
+        </article>
+
+        <article class="phone" data-screen="29">
+          <div class="device-top"></div>
+          <section class="screen app-screen tariff-screen">
+            <header class="app-header">
+              <button class="icon-button back" data-go="15" aria-label="Regresar">‹</button>
+              <div>
+                <p class="screen-number">29 · Tarifa</p>
+                <h2>Tarifa eléctrica</h2>
+              </div>
+            </header>
+
+            <section class="tariff-hero">
+              <span>Tarifa actual</span>
+              <strong>CFE DAC</strong>
+              <small>$3.00 MXN por kWh · estimación editable.</small>
+            </section>
+
+            <section class="tariff-options">
+              <button>
+                <span>Básica</span>
+                <strong>$1.15 / kWh</strong>
+              </button>
+              <button>
+                <span>Intermedia</span>
+                <strong>$1.80 / kWh</strong>
+              </button>
+              <button class="active">
+                <span>DAC</span>
+                <strong>$3.00 / kWh</strong>
+              </button>
+            </section>
+
+            <section class="custom-rate-card">
+              <span>Costo personalizado</span>
+              <strong>$3.00 MXN</strong>
+              <small>Usa el costo de tu recibo CFE más reciente para mayor precisión.</small>
+            </section>
+
+            <button class="primary-action add-device-cta" data-go="15">Guardar tarifa</button>
+          </section>
+        </article>
+
+        <article class="phone" data-screen="30">
+          <div class="device-top"></div>
+          <section class="screen app-screen action-plan-screen">
+            <header class="app-header">
+              <button class="icon-button back" data-go="20" aria-label="Regresar">‹</button>
+              <div>
+                <p class="screen-number">30 · Plan</p>
+                <h2>Plan de ahorro</h2>
+              </div>
+            </header>
+
+            <section class="plan-hero">
+              <span>Objetivo</span>
+              <strong>Ahorrar $286</strong>
+              <small>Plan recomendado para cerrar el mes debajo de $720 MXN.</small>
+            </section>
+
+            <section class="plan-steps">
+              <button data-go="19">
+                <i>1</i>
+                <span>
+                  <strong>Recortar AC nocturno</strong>
+                  <small>Ahorro estimado $128 · impacto alto</small>
+                </span>
+              </button>
+              <button data-go="08R">
+                <i>2</i>
+                <span>
+                  <strong>Ajustar refrigerador a 4 °C</strong>
+                  <small>Ahorro estimado $74 · impacto medio</small>
+                </span>
+              </button>
+              <button data-go="08T">
+                <i>3</i>
+                <span>
+                  <strong>Apagar stand-by nocturno</strong>
+                  <small>Ahorro estimado $39 · acción rápida</small>
+                </span>
+              </button>
+            </section>
+
+            <section class="plan-progress-card">
+              <span>Impacto acumulado</span>
+              <strong>$241 / $286</strong>
+              <div><i style="--value: 84%"></i></div>
+            </section>
+
+            <button class="primary-action add-device-cta" data-go="16">Ver plan en reporte</button>
+
+            <nav class="bottom-nav" aria-label="Navegación principal">
+              <button data-go="06"><span>⌂</span>Inicio</button>
+              <button data-go="07"><span>▦</span>Dispositivos</button>
+              <button class="active" data-go="10"><span>▥</span>Estadísticas</button>
+              <button data-go="11"><span>!</span>Alertas</button>
+              <button data-go="14"><span>○</span>Perfil</button>
+            </nav>
+          </section>
+        </article>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
